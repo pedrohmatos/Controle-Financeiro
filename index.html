@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanças</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/mediaq.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <h1>Controle Financeiro</h1>
+    </header>
+    <main>
+        <div class="cards">
+            <div class="cardBox">
+                <div class="cardTitle">
+                    <h3>Entradas</h3><span class="material-symbols-outlined">
+                        arrow_circle_up
+                    </span>
+                </div>
+                <div class="result1">0.00</div>
+            </div>
+            <div class="cardBox">
+                <div class="cardTitle">
+                    <h3>Saídas</h3><span class="material-symbols-outlined">
+                        arrow_circle_down
+                    </span>
+                </div>
+                <div class="result2">0.00</div>
+            </div>
+            <div class="cardBox">
+                <div class="cardTitle">
+                    <h3>Total</h3><span class="material-symbols-outlined">
+                        attach_money
+                    </span>
+                </div>
+                <div class="result">0.00</div>
+            </div>
+        </div>
+
+        <form class="inputs" method="get">
+            <div class="inputBox">
+                <label for="iValor">Valor</label>
+                <input type="number" id="iValor" required>
+            </div>
+            <div class="inputBox">
+                <label for="iDescricao">Descrição</label>
+                <input type="text" id="iDescricao" required>
+            </div>
+
+            <div class="inputCheck">
+                <div class="check">
+                    <input type="radio" name="tipoDeValor" id="iEntrada">
+                    <label for="iEntrada">Entrada</label>
+                </div>
+                <div class="check">
+                    <input type="radio" name="tipoDeValor" id="iSaida">
+                    <label for="iSaida">Saída</label>
+                </div>
+            </div>
+
+            <button class="bttnAdd">Adicionar</button>
+        </form>
+        <details class="report">
+            <summary>Relatório</summary>
+            <div class="headerReport">
+                <h2>Valor</h2>
+                <h2>Descrição</h2>
+                <h2>Tipo</h2>
+            </div>
+            <div class="saveMoney">
+            </div>
+        </details>
+    </main>
+    <footer>
+        <p>Projeto pessoal<br>Desenvolvido por &copy; pedrohmatos</p>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

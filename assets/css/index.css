@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fundoDaPagina: #f8f8f8;
+    --corMaisClara: #ffffff;
+    --elementosColoridos: #08cac1;
+    --letraEscura: #0b1323;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--fundoDaPagina);
+}
+
+header {
+    background-color: var(--elementosColoridos);
+    color: var(--corMaisClara);
+    text-align: center;
+    height: 150px;
+    padding: 20px;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+
+    margin-top: -30px;
+    color: var(--letraEscura);
+}
+
+.cardBox {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.247);
+    border-radius: 7px;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--corMaisClara);
+
+    width: 30%;
+    height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.cardTitle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.result, .result1, .result2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.inputs {
+    background-color: var(--corMaisClara);
+    border-radius: 7px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.247);
+    width: 90%;
+    margin: 0px auto 32px auto;
+    padding: 32px;
+    color: var(--letraEscura);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox input {
+    font-size: 16px;
+    height: 35px;
+    padding-left: 5px;
+    outline: none;
+}
+
+.inputBox input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.inputCheck {
+    display: flex;
+    column-gap: 16px;
+}
+
+.bttnAdd {
+    border: none;
+    background-color: var(--elementosColoridos);
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--corMaisClara);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.bttnAdd:hover {
+    transition: 0.4s;
+    background-color: var(--elementosColoridos);
+}
+
+.report {
+    background-color: var(--corMaisClara);
+    border-radius: 7px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.247);
+    padding: 16px;
+    margin-bottom: 150px;
+}
+
+.report > summary {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--letraEscura);
+}
+
+.headerReport {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0px 40px 10px 0px;
+    border-bottom: 1px solid var(--letraEscura);
+    margin-bottom: 16px;
+}
+
+.headerReport h2 {
+    color: var(--letraEscura);
+    font-size: 16px;
+}
+
+.money {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 16px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    background-color: var(--elementosColoridos);
+    color: var(--corMaisClara);
+    text-align: center;
+    font-weight: 800;
+    padding: 32px;
+}

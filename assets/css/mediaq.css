@@ -1,0 +1,31 @@
+@media screen and (max-width: 1200px) {
+    .cardBox {
+        width: 40%;
+    }
+
+    .inputs {
+        flex-wrap: wrap;
+    }
+
+    .inputBox, .inputCheck, .bttnAdd {
+        margin: 0px 16px;
+    }
+
+    .bttnAdd {
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .cardBox {
+        width: 240px;
+    }
+
+    .inputs {
+        flex-direction: column;
+    }
+}
